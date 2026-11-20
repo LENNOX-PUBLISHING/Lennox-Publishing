@@ -68,7 +68,13 @@
   <p>In meiner Freizeit spiele ich Golf. Auf dem Platz lerne ich Geduld und Konzentration, und das hilft mir auch beim Schreiben.</p>
 
   <h2>Meine Bücher</h2>
-  <p>Hier werde ich bald meine Texte und Buchprojekte vorstellen. Schau gerne bald wieder vorbei!</p>
+  <h3>📖 Neuigkeiten von Lennox Publishing</h3>
+  <p>Mein neues Weihnachtsbuch „Das Licht von Bethlehem – Die Geschichte von Jesus und dem Wunder der Weihnacht“ befindet sich derzeit in Entwicklung.</p>
+  <p>Ich arbeite aktuell an den Kapiteln, den Inhalten und der Gestaltung des Buches.</p>
+  <p>Das Projekt soll die biblische Weihnachtsgeschichte erzählen und die Botschaft von Jesus Christus, Hoffnung und Nächstenliebe vermitteln.</p>
+  <p><strong>✨ Status: In Entwicklung</strong></p>
+  <p>Weitere Informationen zur Veröffentlichung folgen!</p>
+  <p><em>Lennox Berg<br>Gründer und Verleger – Lennox Publishing</em></p>
 
   <h2>Kontakt</h2>
   <p>Schreib mir gern eine Nachricht!</p>
