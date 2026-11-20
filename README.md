@@ -14,12 +14,34 @@
       color: #222;
       background-color: #f7f7f2;
     }
-    h1 {
+    h1, h2 {
       color: #1e5631;
     }
     h2 {
-      color: #1e5631;
       margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 16px;
+      padding: 12px 24px;
+      background-color: #1e5631;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
     }
   </style>
 </head>
@@ -36,6 +58,21 @@
 
   <h2>Meine Bücher</h2>
   <p>Hier werde ich bald meine Texte und Buchprojekte vorstellen. Schau gerne bald wieder vorbei!</p>
+
+  <h2>Kontakt</h2>
+  <p>Schreib mir gern eine Nachricht!</p>
+  <form action="https://formspree.io/f/xdeglabr" method="POST">
+    <label for="name">Dein Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Deine E-Mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Deine Nachricht</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Senden</button>
+  </form>
 
 </body>
 </html>
