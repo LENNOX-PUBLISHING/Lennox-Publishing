@@ -20,6 +20,15 @@
     h2 {
       margin-top: 30px;
     }
+    .profil {
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      border-radius: 16px;
+      margin: 0 auto 20px auto;
+      border: 4px solid #1e5631;
+    }
     label {
       display: block;
       margin-top: 12px;
@@ -46,6 +55,8 @@
   </style>
 </head>
 <body>
+
+  <img class="profil" src="Profil.jpg.PNG" alt="Logo von Lennox Publishing">
 
   <h1>Willkommen bei Lennox Publishing</h1>
   <p>Schön, dass du hier bist! Das ist die offizielle Website von Lennox Berg.</p>
