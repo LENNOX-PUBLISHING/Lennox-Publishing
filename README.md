@@ -1,4 +1,72 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lennox Publishing</title>
+  <style>
+    body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #222; }
+    footer { margin-top: 60px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Lennox Publishing</h1>
+  <p>Willkommen auf meiner Webseite. Hier kommt bald mehr Inhalt.</p>
+
+  <footer>
+    <a href="datenschutzerklaerung_lennox_publishing_github_io_de.pdf" target="_blank" rel="noopener">Datenschutzerklärung</a>
+  </footer>
+
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#12284c;color:#fff;padding:16px;font-family:sans-serif;z-index:9999;">
+    <p style="margin:0 0 12px 0;">
+      Wir verwenden Cookies, um unsere Seite zu verbessern. Mehr dazu in unserer
+      <a href="datenschutzerklaerung_lennox_publishing_github_io_de.pdf" target="_blank" rel="noopener" style="color:#9cc4ff;">Datenschutzerklärung</a>.
+    </p>
+    <button id="cookie-accept" style="background:#fff;color:#12284c;border:0;padding:10px 18px;border-radius:6px;cursor:pointer;margin-right:8px;">Akzeptieren</button>
+    <button id="cookie-reject" style="background:transparent;color:#fff;border:1px solid #fff;padding:10px 18px;border-radius:6px;cursor:pointer;">Ablehnen</button>
+  </div>
+
+  <script>
+    function setCookie(name, value, days) {
+      var expires = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
+      document.cookie = name + "=" + value + "; expires=" + expires + "; path=/; SameSite=Lax";
+    }
+
+    function getCookie(name) {
+      var parts = document.cookie.split("; ");
+      for (var i = 0; i < parts.length; i++) {
+        var pair = parts[i].split("=");
+        if (pair[0] === name) return pair[1];
+      }
+      return null;
+    }
+
+    function loadTracking() {
+      // Hier nur Skripte laden, die Cookies setzen (z. B. Analytics)
+    }
+
+    var banner = document.getElementById("cookie-banner");
+    var choice = getCookie("cookie_consent");
+
+    if (!choice) {
+      banner.style.display = "block";
+    } else if (choice === "accepted") {
+      loadTracking();
+    }
+
+    document.getElementById("cookie-accept").onclick = function () {
+      setCookie("cookie_consent", "accepted", 180);
+      banner.style.display = "none";
+      loadTracking();
+    };
+
+    document.getElementById("cookie-reject").onclick = function () {
+      setCookie("cookie_consent", "rejected", 30);
+      banner.style.display = "none";
+    };
+  </script>
+</body>
+</html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -92,4 +160,4 @@
   </form>
 
 </body>
-</html>
+</html> 
